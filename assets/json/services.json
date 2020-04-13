@@ -1,0 +1,24 @@
+[ 
+  {
+    "heading" : "Video Games",
+    "icon"    : "assets/images/img1.jpg",
+    "desc"    : "Gaming World features a great selection of games, offering everything from the hottest new releases to classic titles."
+  },
+
+  {
+    "heading" : "Video Game Consoles",
+    "icon"    : "assets/images/img3.jpg",
+    "desc"    : "Whether you're just getting started in the gaming world or you're upgrading your system, you can find the gaming console that's right for you at Gaming World."
+  },
+
+  {
+    "heading" : "Gaming Accessories",
+    "icon"    : "assets/images/img4.jpg",
+    "desc"    : "After you purchase a gaming console and a game to play, you'll have everything you need to get started."
+  },
+	{
+    "heading" : "Video Game Trade-In Program",
+    "icon"    : "assets/images/img2.jpg",
+    "desc"    : "If you have a growing stack of games that you've already mastered, consider trading them in for a gift card. You can apply the value of the gift card toward a new game."
+  }
+]
