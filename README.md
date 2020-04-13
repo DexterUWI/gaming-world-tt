@@ -1,4 +1,5 @@
 Gaming World TT - An E-Commerce Gaming Shop.
+
 DEPLOYED VIA Firebase: https://gaming-world-tt.web.app/
 
 This website was developed and designed by Chelsea Joyeau, Narin Ramnehal and Dexter Cain as our final project for UWI STA INFO1601 Web Programming Group Project Semester 2 2020.
