@@ -72,7 +72,7 @@ platformChecks.forEach(check => {
         let content = ``
         container.innerHTML = ''
         let parsedData = []
-        // PARSIRANJE PODATAKA
+		
         filters.forEach(filter => {
           if (filter.checked) {
             let res = data.filter(game => game.platform === filter.param)

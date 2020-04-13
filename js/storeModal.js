@@ -8,7 +8,7 @@ $(document).ready(function () {
     alertify.notify('Added to Cart. <i class="fas fa-shopping-cart"></i>', 'custom', 2)
   })
 })
-const BASE_URL = 'https://cerealkiller97.github.io/GamingZone'
+const BASE_URL = 'https://gaming-world-tt.web.app/'
 let modal = document.querySelector('.gameModal')
 
 let hideModal = () => {
