@@ -17,8 +17,8 @@ This is our first website as a group using client-side languages.
 - Alertify.js
 - FancyBox3
 
-<strong>Cloud Services
-</strong>Google Analytics integrated via Firebase
+<strong>Cloud Services</strong><br>
+- Google Analytics integrated via Firebase
 
 <em>Last Modified: April 15th 2020
 </em>
