@@ -36,7 +36,7 @@ let removeClasses = a => {
 		pwd.value ? pwd.value === confirmPwd.value && (confirmPwd.classList.add('is-success'), isFormOK = !0, progress.value += 20) : (confirmPwd.classList.add('is-danger'), isFormOK = !1, progress.value -= 20)
 	},
 	registrationValidation = () => {
-		isFormOK ? (name.classList.remove('is-success'), name.value = '', username.classList.remove('is-success'), username.value = '', email.classList.remove('is-success'), email.value = '', pwd.classList.remove('is-success'), pwd.value = '', confirmPwd.classList.remove('is-success'), confirmPwd.value = '', progress.value = 0, notify.textContent = 'You have been successfully logged in.Please check your mail to confirm your identity.') : notify.textContent = 'Something went wrong.Please try again.'
+		isFormOK ? (name.classList.remove('is-success'), name.value = '', username.classList.remove('is-success'), username.value = '', email.classList.remove('is-success'), email.value = '', pwd.classList.remove('is-success'), pwd.value = '', confirmPwd.classList.remove('is-success'), confirmPwd.value = '', progress.value = 0, notify.textContent = 'You have been successfully logged in. Please check your mail to confirm your identity.') : notify.textContent = 'Something went wrong. Please try again.'
 	};
 $(document).ready(() => {
 	$('#registerBtn').click(() => {

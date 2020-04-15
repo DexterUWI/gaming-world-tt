@@ -43,6 +43,6 @@ $(document).ready(() => {
 			scrollTop: $('#about').offset().top
 		}, 2500)
 	}), $('#subscribeBtn').click(() => {
-		$('#envelope').hasClass('icon-success') ? ($('#newsletter').val(''), $('#envelope').removeClass('icon-success'), alertify.notify('Thank you for contacting us.', 'customSuccess', 2)) : $('#envelope').hasClass('icon-danger') && ($('#envelope').removeClass('icon-danger'), alertify.notify('Invalid e-mail.', 'customDanger', 2))
+		$('#envelope').hasClass('icon-success') ? ($('#newsletter').val(''), $('#envelope').removeClass('icon-success'), alertify.notify('Thank you for subscribing!', 'customSuccess', 2)) : $('#envelope').hasClass('icon-danger') && ($('#envelope').removeClass('icon-danger'), alertify.notify('Invalid e-mail.', 'customDanger', 2))
 	})
 });
