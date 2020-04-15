@@ -268,6 +268,30 @@ the best gaming store in Trinidad and Tobago!">
     crossorigin="anonymous"></script>
   <script src="js/main.js" type="text/javascript"></script>
   <script src="js/jquery.js" type="text/javascript"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDD23wehoRa5eG3i0o0KnXgSVR1keokSEc",
+    authDomain: "gaming-world-tt.firebaseapp.com",
+    databaseURL: "https://gaming-world-tt.firebaseio.com",
+    projectId: "gaming-world-tt",
+    storageBucket: "gaming-world-tt.appspot.com",
+    messagingSenderId: "278325585473",
+    appId: "1:278325585473:web:e109747142301aeb2388c0",
+    measurementId: "G-FWBXNF26H4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 </body>
 </html>
 
