@@ -13,11 +13,16 @@
 body {
 	font-size: 14px!important
 }
+
+.cta-heading{
+	font-size: 70px!important
+}
+
 .overflow {
 	overflow-x: hidden
 }
 .landing {
-	background: url("../assets/images/home_bg.jpg") center no-repeat!important;
+	background: url("../assets/images/home_bg2.jpg") center no-repeat!important;
 	background-size: cover!important
 }
 
@@ -36,6 +41,16 @@ body {
 .menuBannerBG {
 	background: url("../assets/images/store_menu_bg.jpg") top no-repeat!important;
 	background-size: cover!important;
+}
+
+.bodyBannerBG {
+	background-image: url("../assets/images/just-cause-3.jpg");
+	height: 400px;
+	/* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .navbar-item {
