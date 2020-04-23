@@ -20,6 +20,9 @@ This is our first website as a group using client-side languages.
 <strong>Cloud Services</strong><br>
 - Google Analytics integrated via Firebase
 
-<em>Last Modified: April 15th 2020
+<strong>Social Media Integration</strong>
+- Facebook Page Like iFrame
+
+<em>Last Modified: April 23rd 2020
 </em>
 
