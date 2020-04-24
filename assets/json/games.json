@@ -13,7 +13,7 @@
       "assets/images/game-0-screen-3.jpg"
     ],
     "image": "assets/images/game-0.jpg",
-    "price": "$9.57",
+    "price": "$20.00",
     "title": "Crysis 2",
     "id": 0
   },
@@ -31,7 +31,7 @@
       "assets/images/game-1-screen-3.jpg"
     ],
     "image": "assets/images/game-1.jpg",
-    "price": "$31.79",
+    "price": "$30.00",
     "title": "Tomb Raider",
     "id": 1
   },
@@ -49,7 +49,7 @@
       "assets/images/game-2-screen-3.jpg"
     ],
     "image": "assets/images/game-2.jpg",
-    "price": "$19.50",
+    "price": "$20.00",
     "title": "MOH Warfighter",
     "id": 2
   },
@@ -67,7 +67,7 @@
       "assets/images/game-3-screen-3.jpg"
     ],
     "image": "assets/images/game-3.jpg",
-    "price": "$12.68",
+    "price": "$35.00",
     "title": "HITMAN Absolution",
     "id": 3
   },
@@ -85,7 +85,7 @@
       "assets/images/game-4-screen-3.jpg"
     ],
     "image": "assets/images/game-4.jpg",
-    "price": "$5.52",
+    "price": "$45.00",
     "title": "The Last Of Us",
     "id": 4
   },
@@ -103,7 +103,7 @@
       "assets/images/game-5-screen-3.jpg"
     ],
     "image": "assets/images/game-5.jpg",
-    "price": "$43.00",
+    "price": "$40.00",
     "title": "The Elder Scrolls V: Skyrim",
     "id": 5
   },
@@ -121,7 +121,7 @@
       "assets/images/game-6-screen-3.jpg"
     ],
     "image": "assets/images/game-6.jpg",
-    "price": "$35.65",
+    "price": "$35.00",
     "title": "COD Infinite Warfare",
     "id": 6
   },
@@ -139,7 +139,7 @@
       "assets/images/game-7-screen-3.jpg"
     ],
     "image": "assets/images/game-7.jpg",
-    "price": "$24.34",
+    "price": "$20.00",
     "title": "Battlefield 1",
     "id": 7
   },
@@ -157,7 +157,7 @@
       "assets/images/game-8-screen-3.jpg"
     ],
     "image": "assets/images/game-8.jpg",
-    "price": "$23.46",
+    "price": "$60.00",
     "title": "HITMAN",
     "id": 8
   },
@@ -175,7 +175,7 @@
       "assets/images/game-9-screen-3.jpg"
     ],
     "image": "assets/images/game-9.jpg",
-    "price": "$5.17",
+    "price": "$65.00",
     "title": "NBA 2K18",
     "id": 9
   },
@@ -193,7 +193,7 @@
       "assets/images/game-10-screen-3.jpg"
     ],
     "image": "assets/images/game-10.jpg",
-    "price": "$17.25",
+    "price": "$35.00",
     "title": "Grim Fandango",
     "id": 10
   },
@@ -211,7 +211,7 @@
       "assets/images/game-11-screen-3.jpg"
     ],
     "image": "assets/images/game-11.jpg",
-    "price": "$35.94",
+    "price": "$40.00",
     "title": "Splinter Cell Blacklist",
     "id": 11
   },
@@ -229,7 +229,7 @@
       "assets/images/game-12-screen-3.jpg"
     ],
     "image": "assets/images/game-12.jpg",
-    "price": "$15.30",
+    "price": "$25.00",
     "title": "Darksiders II",
     "id": 12
   },
@@ -247,7 +247,7 @@
       "assets/images/game-13-screen-3.jpg"
     ],
     "image": "assets/images/game-13.jpg",
-    "price": "$27.08",
+    "price": "$30.00",
     "title": "HALF-LIFE",
     "id": 13
   },
@@ -265,7 +265,7 @@
       "assets/images/game-14-screen-3.jpg"
     ],
     "image": "assets/images/game-14.jpg",
-    "price": "$39.71",
+    "price": "$35.00",
     "title": "FAR CRY 5",
     "id": 14
   },
@@ -283,7 +283,7 @@
       "assets/images/game-15-screen-3.jpg"
     ],
     "image": "assets/images/game-15.jpg",
-    "price": "$40.26",
+    "price": "$40.00",
     "title": "Ghost Recon Wildlands",
     "id": 15
   },
@@ -301,7 +301,7 @@
       "assets/images/game-16-screen-3.jpg"
     ],
     "image": "assets/images/game-16.jpg",
-    "price": "$19.81",
+    "price": "$15.00",
     "title": "FIFA 18",
     "id": 16
   },
@@ -319,7 +319,7 @@
       "assets/images/game-17-screen-3.jpg"
     ],
     "image": "assets/images/game-17.jpg",
-    "price": "$22.39",
+    "price": "$25.00",
     "title": "Wolfenstein II",
     "id": 17
   },
@@ -355,7 +355,7 @@
       "assets/images/game-19-screen-3.jpg"
     ],
     "image": "assets/images/game-19.jpg",
-    "price": "$16.83",
+    "price": "$35.00",
     "title": "S.T.A.L.K.E.R Call Of Pripyat",
     "id": 19
   },
@@ -373,7 +373,7 @@
       "assets/images/game-20-screen-3.jpg"
     ],
     "image": "assets/images/game-20.jpg",
-    "price": "$16.90",
+    "price": "$35.00",
     "title": "METRO Exodus",
     "id": 20
   },
@@ -391,7 +391,7 @@
       "assets/images/game-21-screen-3.jpg"
     ],
     "image": "assets/images/game-21.jpg",
-    "price": "$32.39",
+    "price": "$30.00",
     "title": "Civilization VI",
     "id": 21
   },
@@ -409,7 +409,7 @@
       "assets/images/game-22-screen-3.jpg"
     ],
     "image": "assets/images/game-22.jpg",
-    "price": "$38.31",
+    "price": "$20.00",
     "title": "Rainbox Six Siege",
     "id": 22
   },
@@ -427,7 +427,7 @@
       "assets/images/game-23-screen-3.jpg"
     ],
     "image": "assets/images/game-23.jpg",
-    "price": "$25.55",
+    "price": "$50.00",
     "title": "Mortal Kombat X",
     "id": 23
   },
@@ -445,7 +445,7 @@
       "assets/images/game-24-screen-3.jpg"
     ],
     "image": "assets/images/game-24.jpg",
-    "price": "$28.34",
+    "price": "$30.00",
     "title": "Riddick EFBB",
     "id": 24
   }
