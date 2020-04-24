@@ -10,10 +10,16 @@ let name = document.querySelector('#regName'),
 	msgNotification = document.querySelector('#messageNotification'),
 	notify = document.querySelector('#notify'),
 	isFormOK = !0,
+	/*
+	Regular Expression Patterns for name, username, email and paswword validation
+	More info here https://www.w3resource.com/javascript/form/email-validation.php
+	*/
 	regName = /^([A-ZŠĐŽĆČ][a-zšđžćč]{2,20}\s)+([A-ZŠĐŽĆČ][a-zšđžćč]{2,20})+$/,
 	regUsername = /^[A-ZŠĐŽĆČ][a-zšđžćč]{2,20}((\_)|(\.))?[A-ZŠĐŽĆČ][a-zšđžćč]{2,20}[0-9]{0,5}$/,
 	regEmail = /^[a-zšđžćč]{4,}(\.)?([a-zšđžćč]{4,})*([0-9]{0,5})?\@((gmail)|(outlook)|(msn)|(live)|(hotmail)|(yahoo)|\w)\.com$/,
 	regPwd = /^[a-zšđžćč]{2,20}[0-9]*$/;
+
+//arrow functions allow us to write shorter function syntax
 window.onload = () => {
 	name.focus(), name.addEventListener('blur', nameValid), username.addEventListener('blur', userValid), email.addEventListener('blur', emailValid), pwd.addEventListener('blur', pwdValid), confirmPwd.addEventListener('blur', confirmValid), name.addEventListener('focus', removeClasses), username.addEventListener('focus', removeClasses), email.addEventListener('focus', removeClasses), pwd.addEventListener('focus', removeClasses), confirmPwd.addEventListener('focus', removeClasses), registerBtn.addEventListener('click', registrationValidation)
 };
@@ -38,6 +44,8 @@ let removeClasses = a => {
 	registrationValidation = () => {
 		isFormOK ? (name.classList.remove('is-success'), name.value = '', username.classList.remove('is-success'), username.value = '', email.classList.remove('is-success'), email.value = '', pwd.classList.remove('is-success'), pwd.value = '', confirmPwd.classList.remove('is-success'), confirmPwd.value = '', progress.value = 0, notify.textContent = 'You have been successfully logged in. Please check your mail to confirm your identity.') : notify.textContent = 'Something went wrong. Please try again.'
 	};
+
+/*A page can't be manipulated safely until the document is "ready." jQuery detects this state of readiness here.*/
 $(document).ready(() => {
 	$('#registerBtn').click(() => {
 		isFormOK ? $('#notify').addClass('is-link') : $('#notify').addClass('is-danger'), $('#notify').addClass('opacityActive'), setTimeout(() => {

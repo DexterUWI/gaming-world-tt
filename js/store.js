@@ -1,6 +1,7 @@
 const BASE = 'https://gaming-world-tt.web.app/'
 const container = document.getElementById('gameContainer')
 
+/*A page can't be manipulated safely until the document is "ready." jQuery detects this state of readiness here.*/
 $(document).ready( () => {
   setTimeout(() => {
 	alertify.set('notifier','position', 'bottom-left');
@@ -62,7 +63,7 @@ platformChecks.forEach(check => {
 
 platformChecks.forEach(check => {
   check.addEventListener('change', () => {
-    const filter = filters.filter(filter => check.value === filter.param)[0] // NAJOMILJENIJA LINIJA
+    const filter = filters.filter(filter => check.value === filter.param)[0] 
     filter.checked = !filter.checked 
 
     $.ajax({
