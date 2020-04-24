@@ -7,14 +7,17 @@
 <meta charset="utf-8">
 <meta name="description" content="Welcome to Gaming World TT...Shop for your favorite games now from
 the best gaming store in Trinidad and Tobago!">
-<meta name="keywords" content="GamingWorld,Games,enterntaiment,consoles,pc,ps3,about,webshop">
+<meta name="keywords" content="gaming, world, games, enterntaiment, consoles, pc, ps3, about, e-commerce">
 <meta name="author" content="ConnectTech">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="rights" content="Created by ConnecTech">
-<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/ico" sizes="16x16">
+<link rel="icon" href="assets/images/favicon.ico" type="image/ico" sizes="16x16">
 <!--CSS-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/css/alertify.min.css" />
+<!-- 
+The defer attribute is a boolean attribute that specifies that the script is executed when the page has finished parsing.
+-->
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <link rel="stylesheet" href="css/main.css">
 <link href="css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
@@ -65,20 +68,18 @@ the best gaming store in Trinidad and Tobago!">
   </div>
 </section>
 <!-- END OF SERVICES -->
+<!--PARALLAX IMAGE SCROLLING SECTION-->
 <section class="is-white is-bold bodyBannerBG">
   <div class="hero-body">
     <div class="container"> 
 		<!--
-      <div class="columns is-multiline">
-        <div class="column has-text-centered has-text-white">
-          <h3 class="has-text-weight-bold is-size-1"> Stay Connected! </h3>
-          <p class="has-text-weight-light is-size-5"> Subscribe to receive weekly updates about promotions and events. </p>
-        </div>
-      </div>
+		Parallax scrolling effect created via CSS and applied to the ".bodyBannerBG" class
+      	Tutorial Link: https://www.w3schools.com/howto/howto_css_parallax.asp
       -->
 	</div>
   </div>
 </section>
+<!--END OF PARALLAX IMAGE SECTION-->
 <!-- ABOUT SECTION -->
 <section class="is-light is-bold is-medium" id="aboutSection">
   <div class="hero-body">
@@ -158,6 +159,7 @@ the best gaming store in Trinidad and Tobago!">
             <li> <a id="YTHover" href="https://www.youtube.com" target="_blank"> Youtube <i class="social fab fa-youtube"></i> </a> </li>
           </ul>
         </div>
+		  <!--Facebook page iFRAME plugin code-->
         <div class="column">
           <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook%2F&tabs=timeline&width=340&height=250&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1433207463595532" width="340" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
           <div class="arrowToTop"> <i id="arrow" class="fas fa-angle-up"></i> </div>
@@ -167,7 +169,7 @@ the best gaming store in Trinidad and Tobago!">
   </div>
 </footer>
 <!-- FOOTER  --> 
-<!-- JS -->
+<!-- JAVASCRIPT -->
 <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
@@ -196,5 +198,6 @@ the best gaming store in Trinidad and Tobago!">
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 </script>
+<!-- JAVASCRIPT -->
 </body>
 </html>
