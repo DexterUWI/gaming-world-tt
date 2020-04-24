@@ -211,6 +211,7 @@ let searchGames = () => {
 
 }
 
+//Arrow function
 window.onload = () => {
   searchBtn.addEventListener('click', searchGames)
 }
