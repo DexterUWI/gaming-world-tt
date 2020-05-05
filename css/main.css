@@ -5,19 +5,15 @@
 .ajs-button, .badge:after, i {
 	text-align: center
 }
-
 * {
 	font-family: 'Poppins', sans-serif;
 }
-
 body {
 	font-size: 14px!important
 }
-
-.cta-heading{
+.cta-heading {
 	font-size: 70px!important
 }
-
 .overflow {
 	overflow-x: hidden
 }
@@ -25,43 +21,69 @@ body {
 	background: url("../assets/images/home_bg2.jpg") center no-repeat!important;
 	background-size: cover!important
 }
-
-.landingLog {
-	background: url("../assets/images/login_bg.jpg") center no-repeat!important;
-	background-size: cover!important;
-	padding: 100px
-}
-
-.landingReg {
-	background: url("../assets/images/reg_bg.jpg") center no-repeat!important;
-	background-size: cover!important;
-	padding: 100px
-}
-
 .menuBannerBG {
 	background: url("../assets/images/store_menu_bg.jpg") top no-repeat!important;
 	background-size: cover!important;
 }
 
-.bodyBannerBG {
+/*
+CSS for container to hold background image itself
+*/
+.zoomBIn{
 	background-image: url("../assets/images/just-cause-3.jpg");
 	height: 400px;
 	/* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	  background-attachment: fixed;
+	background-size: cover;
+	  -webkit-animation: zoom 50s; /* Chrome, Safari, Opera */
+    animation: zoom 50s;
+	  animation-iteration-count: infinite;
 }
 
+/*
+CSS for container to hold the background image container
+Conceals the overflow that occurs as the image zooms in
+*/
+.zoomBOut {
+height: 400px;
+	overflow: hidden;
+        position: relative;
+  }
+
+/*
+CSS trick to auto zoom image 
+Chrome, Safari, Opera */
+@-webkit-keyframes zoom {
+    from {
+    	-webkit-transform: scale(1,1);
+    }
+    to {
+    	-webkit-transform: scale(1.5,1.5);
+    }
+}
+
+/* Standard syntax */
+@keyframes zoom {
+   from {
+        transform: scale(1,1);
+   }
+   to {
+        transform: scale(1.5,1.5);
+   }
+}
 .navbar-item {
 	font-size: 90%;
 	letter-spacing: .1rem;
 	transition: .2s linear
 }
+.navbar-end {
+	align-self: center;
+}
 .navbar-button {
 	font-size: .9rem
 }
-
 .no-padding-left {
 	padding-left: 0
 }
@@ -87,11 +109,9 @@ body {
 .navbar-burger {
 	z-index: 101
 }
-
-.has-text-link{
- color: #d20935!important;
+.has-text-link {
+	color: #d20935!important;
 }
-
 .is-active span {
 	background-color: #d20935
 }
@@ -99,7 +119,7 @@ body {
 	width: .3em
 }
 ::-webkit-scrollbar-thumb {
-	background-color: orange;
+	background-color: darkred;
 	outline: #708090 solid 1px
 }
 ::-webkit-scrollbar-track {
@@ -321,6 +341,10 @@ i {
 	background-color: #f5f5f5;
 	color: #000
 }
+.alertify .ajs-body .ajs-content {
+	text-align: center;
+	font-size: 16px;
+}
 .ajs-button {
 	-moz-appearance: none;
 	-webkit-appearance: none;
@@ -380,7 +404,88 @@ i {
 .game-gallery a {
 	margin: .2em
 }
-
-.text-blur{
-text-shadow: 2px 2px 4px #000000;
+.text-blur {
+	text-shadow: 2px 2px 4px #000000;
+}
+/* CSS for Google Sign In button and login page */
+#sign-out {
+	margin: auto;
+}
+.avatar {
+	border-radius: 95%;
+	height: 50px;
+	width: 50px;
+	padding: 3px;
+}
+#button-sign-out {
+	display: inline-block;
+	justify-content: center;
+	font-size: 16px;
+	width: 100px;
+	height: 50px;
+	border-radius: 1px;
+	background-color: grey;
+	border: 1px solid transparent;
+	color: #fff;
+	box-shadow: 1px 1px 1px grey;
+	text-align: center;
+}
+#button-sign-out:hover {
+	cursor: pointer;
+}
+#g-sign-in-wrapper {
+	display: inline-block;
+	width: auto;
+	height: 50px;
+	border-radius: 1px;
+	background-color: #4285f4;
+	border: 1px solid transparent;
+	color: #fff;
+	box-shadow: 1px 1px 1px grey;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/*
+Using Webkit to allow for glowing effect on element container hover
+*/
+@-webkit-keyframes greenPulse {
+	from {
+		background-color: #749a02;
+		-webkit-box-shadow: 0 0 0 #333;
+	}
+	to {
+		background-color: #91bd09;
+		-webkit-box-shadow: 0 0 18px #91bd09;
+	}
+}
+#g-sign-in-wrapper:hover {
+	-webkit-animation-name: greenPulse;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-box-shadow: 0 0 18px #91bd09;
+}
+#g-sign-in-wrapper:hover {
+	cursor: pointer;
+}
+.g-icon-wrapper {
+	float: left;
+	width: 40px;
+	height: 50px;
+	background: #fff;
+	padding: 10px;
+	border-radius: 1px;
+}
+.button-text {
+	font-weight: 800;
+	font-size: 16px;
+	letter-spacing: .21px;
+	margin: 0 6px 0 6px;
+	line-height: 48px;
+	vertical-align: top;
+	text-align: center;
+}
+#button-sign-out-text {
+	display: block;
+	text-align: center;
 }

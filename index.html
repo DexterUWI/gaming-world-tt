@@ -18,8 +18,10 @@ the best gaming store in Trinidad and Tobago!">
 The defer attribute is a boolean attribute that specifies that the script is executed when the page has finished parsing.
 -->
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-<link rel="stylesheet" href="css/main.css">
 <link href="css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 </head>
 <body>
 <!-- HERO -->
@@ -29,8 +31,22 @@ The defer attribute is a boolean attribute that specifies that the script is exe
       <div class="container">
         <div class="navbar-brand"> <img src="assets/images/logo.png" class="img-fluid" alt="Gaming World Logo"> <a role="button" class="navbar-burger burger" data-target="navbarMenuHeroB"> <span aria-hidden="true"></span> <span aria-hidden="true"></span> <span aria-hidden="true"></span> </a> </div>
         <div id="navbarMenuHeroB" class="navbar-menu">
-          <div class="navbar-end"> <a href="store.html" class="navbar-item is-uppercase has-text-weight-bold"> Shop </a> <a id="about" href="#about" class="navbar-item is-uppercase has-text-weight-bold"> About Us </a> <a id="contactLink" href="#contact" class="navbar-item is-uppercase has-text-weight-bold"> Contact Us </a>
-            <div class="navbar-end"> <span class="navbar-item is-uppercase"> <a href="login.html" class="button is-info is-inverted navbar-button has-text-weight-bold"> <span>Login</span> </a> </span> <span class="navbar-item is-uppercase no-padding-left"> <a href="registration.html" class="button is-info is-inverted is-outlined navbar-button has-text-weight-bold"> <span>Register</span> </a> </span> </div>
+          <div class="navbar-end"> <a href="store.html" class="navbar-item is-uppercase has-text-weight-bold"> Shop </a> <a id="about" href="#" onClick="aboutProject()" class="navbar-item is-uppercase has-text-weight-bold"> About </a>
+            <div id="g-sign-in-wrapper">
+              <div class="g-icon-wrapper">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 48 48">
+                  <g>
+                    <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
+                    <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path>
+                    <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path>
+                    <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path>
+                    <path fill="none" d="M0 0h48v48H0z"></path>
+                  </g>
+                </svg>
+              </div>
+              <span id="sign-in-button-text" class="button-text"></span> <img id="user-img" class="avatar" src="" alt=""/> </div>
+            <div>&nbsp;&nbsp;</div>
+            <div id="button-sign-out"> <span class="button-text">Sign Out</span> </div>
           </div>
         </div>
       </div>
@@ -61,28 +77,36 @@ The defer attribute is a boolean attribute that specifies that the script is exe
 <!-- SERVICES -->
 <section class="is-white is-bold is-medium">
   <div class="hero-body">
-    <div class="container">
-      <div class="columns is-multiline servicesContainer is-8"> </div>
+    <div class="container is-centered">
+      <div class="columns servicesContainer is-8"> </div>
+		<div class="columns is-centered padding-inset">
+		  <a href="store.html" class="button is-danger has-text-white is-large has-text-weight-bold">
+    <span class="icon is-medium">
+      <i class="fas fa-shopping-cart"></i>
+    </span>
+    <span>Browse our Games</span>
+  </a>
+		</div>
     </div>
   </div>
 </section>
-<!-- END OF SERVICES -->
+<!-- END OF SERVICES --> 
 <!--PARALLAX IMAGE SCROLLING SECTION-->
-<section class="is-white is-bold bodyBannerBG">
-  <div class="hero-body">
+<section class="is-white is-bold zoomBOut">
+  <div class="hero-body zoomBIn">
     <div class="container"> 
-		<!--
+      <!--
 		Parallax scrolling effect created via CSS and applied to the ".bodyBannerBG" class
       	Tutorial Link: https://www.w3schools.com/howto/howto_css_parallax.asp
-      -->
-	</div>
+      --> 
+    </div>
   </div>
 </section>
-<!--END OF PARALLAX IMAGE SECTION-->
+<!--END OF PARALLAX IMAGE SECTION--> 
 <!-- ABOUT SECTION -->
 <section class="is-light is-bold is-medium" id="aboutSection">
   <div class="hero-body">
-    <div class="container">
+    <div class="container padding-inset">
       <div class="columns">
         <div class="column is-half has-text-left">
           <h2 class="title" style="padding-bottom: 10px"> Video Games, Consoles and Accessories </h2>
@@ -96,7 +120,7 @@ The defer attribute is a boolean attribute that specifies that the script is exe
         </div>
         <div class="column is-half has-text-justified">
           <div class="content">
-            <iframe width="100%" height="400px" src="https://youtube.com/embed/TcMBFSGVi1c?autoplay=1&loop=1&mute=1" allowfullscreen></iframe>
+            <iframe width="100%" height="400px" src="https://youtube.com/embed/8fwwGCr1-po?autoplay=1&loop=1&mute=1" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -104,6 +128,7 @@ The defer attribute is a boolean attribute that specifies that the script is exe
   </div>
 </section>
 <!-- END OF ABOUT SECTION --> 
+
 <!-- NEWSLETTER/CONTACT -->
 <section id="contactSection" class="hero is-link is-bold is-small menuBannerBG">
   <div class="hero-body">
@@ -137,6 +162,7 @@ The defer attribute is a boolean attribute that specifies that the script is exe
             <li> <a class="footer-link" href="">Contact</a> </li>
             <li> <a class="footer-link" href="https://docs.google.com/document/d/1EUXbN10rIYWTd0yIUD0KNAhfCV4xM_UUbHaSN-jmoGg/edit?usp=sharing">Documentation</a> </li>
             <li> <a class="footer-link" href="#">ConnecTech</a> </li>
+			<li> <a class="footer-link" href="#">GitHub</a> </li>
           </ul>
         </div>
         <div class="column">
@@ -158,7 +184,7 @@ The defer attribute is a boolean attribute that specifies that the script is exe
             <li> <a id="YTHover" href="https://www.youtube.com" target="_blank"> Youtube <i class="social fab fa-youtube"></i> </a> </li>
           </ul>
         </div>
-		  <!--Facebook page iFRAME plugin code-->
+        <!--Facebook page iFRAME plugin code-->
         <div class="column">
           <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook%2F&tabs=timeline&width=340&height=250&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1433207463595532" width="340" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
           <div class="arrowToTop"> <i id="arrow" class="fas fa-angle-up"></i> </div>
@@ -168,19 +194,20 @@ The defer attribute is a boolean attribute that specifies that the script is exe
   </div>
 </footer>
 <!-- FOOTER  --> 
-<!-- JAVASCRIPT -->
-<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script>
+<!-- JAVASCRIPT --> 
+<script src="https://apis.google.com/js/platform.js"></script> 
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script> 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-<script src="js/main.js" type="text/javascript"></script>
-<script src="js/jquery.js" type="text/javascript"></script>
+    crossorigin="anonymous"></script> 
+<script src="js/main.js" type="text/javascript"></script> 
+<script src="js/jquery.js" type="text/javascript"></script> 
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first --> 
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script> 
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+     https://firebase.google.com/docs/web/setup#available-libraries --> 
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script> 
 <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
@@ -196,7 +223,7 @@ The defer attribute is a boolean attribute that specifies that the script is exe
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
-</script>
+</script> 
 <!-- JAVASCRIPT -->
 </body>
 </html>
