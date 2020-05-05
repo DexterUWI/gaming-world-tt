@@ -225,3 +225,4 @@ window.onload = () => {
 let showSideBar = () => {
 	sidebar.classList.toggle('sidebar-active'), toggle.classList.toggle('is-active')
 };
+

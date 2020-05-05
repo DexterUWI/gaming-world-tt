@@ -219,22 +219,6 @@ function openUserInfo() {
 		<p><strong>EMAIL:</strong> <a href = "mailto:${profile.getEmail()}" target = "_blank">${profile.getEmail()}</a></p>`
 	);
 }
-// Begin app
-appStart()
-function openUserInfo() {
-
-	var profile = googleUser.getBasicProfile()
-	console.log(profile)
-
-	// open an AlertifyJS custom alert, while passing HTML elements as strings to the title, and the body
-	alertify.alert(
-		"<b>USER DETAILS (logged in via Google)</b>",
-						//using string interpolation to render data on the Document Object Model (DOM)
-		`<p><strong>ACCOUNT NAME:</strong> ${profile.getName()}</p>
-		<img style="padding: 15px; border-radius: 95%;" src="${profile.getImageUrl()}"/>
-		<p><strong>EMAIL:</strong> <a href = "mailto:${profile.getEmail()}" target = "_blank">${profile.getEmail()}</a></p>`
-	);
-}
 
 function aboutProject() {
 	// open an AlertifyJS custom alert, while passing HTML elements as strings to the title, and the body
