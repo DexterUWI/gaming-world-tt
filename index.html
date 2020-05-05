@@ -65,11 +65,10 @@ The defer attribute is a boolean attribute that specifies that the script is exe
   <div class="container">
     <ul class="has-text-centered">
       <li> <a href="index.html" class="is-uppercase is-size-3"> Home </a> </li>
-      <li> <a href="store.html" class="is-uppercase is-size-3"> Store </a> </li>
-      <li> <a href="#about" class="is-uppercase is-size-3"> About </a> </li>
-      <li> <a id="#contact" href="#" class="is-uppercase is-size-3"> Contact </a> </li>
-      <li> <a href="login.html" class="is-uppercase is-size-3"> Login </a> </li>
-      <li> <a href="registration.html" class="is-uppercase is-size-3"> Register </a> </li>
+		      <li> <a onClick="aboutProject()" class="is-uppercase is-size-3"> About </a> </li>
+      <li> <a href="store.html" class="is-uppercase is-size-3"> Shop </a> </li>
+					<li> <a id="sign-in-button-mobile" class="is-uppercase is-size-3"> Sign In </a> </li>
+			<li> <a id="button-sign-out-mobile" class="is-uppercase is-size-3"> Sign Out </a> </li>
     </ul>
   </div>
 </aside>
@@ -78,6 +77,7 @@ The defer attribute is a boolean attribute that specifies that the script is exe
 <section class="is-white is-bold is-medium">
   <div class="hero-body">
     <div class="container is-centered">
+		  <!--Division is used here as a container with a class, servicesContainer, subsequently to be used (via jQuery) as the target for rendering data on the Document Object Model (DOM)-->
       <div class="columns servicesContainer is-8"> </div>
 		<div class="columns is-centered padding-inset">
 		  <a href="store.html" class="button is-danger has-text-white is-large has-text-weight-bold">
@@ -184,9 +184,10 @@ The defer attribute is a boolean attribute that specifies that the script is exe
             <li> <a id="YTHover" href="https://www.youtube.com" target="_blank"> Youtube <i class="social fab fa-youtube"></i> </a> </li>
           </ul>
         </div>
-        <!--Facebook page iFRAME plugin code-->
         <div class="column">
+		<!--Facebook page iFRAME plugin code-->
           <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook%2F&tabs=timeline&width=340&height=250&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1433207463595532" width="340" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+		<!--The division with class, arrowToTop, holds an icon element that allows for easy scrolling to the top of webpage when user is at the bottom.-->
           <div class="arrowToTop"> <i id="arrow" class="fas fa-angle-up"></i> </div>
         </div>
       </div>

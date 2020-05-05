@@ -10,6 +10,7 @@ $(document).ready(() => {
 		dataType: 'json',
 		success: d => {
 			d.forEach(f => {
+				//using string interpolation to render data on the Document Object Model (DOM)
 				b += `<div class="column">
                   <div class="box">
                     <figure class="image service-img is-256x256"> 

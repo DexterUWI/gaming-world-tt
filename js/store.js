@@ -17,6 +17,7 @@ $(document).ready( () => {
     })
   }, 20000)
 
+	
   $.ajax({
     url: `${BASE}/assets/json/games.json`,
     dataType: 'json',
@@ -50,6 +51,7 @@ $(document).ready( () => {
     }
   })
 })
+
 
 //FILTERS
 const platformChecks = document.querySelectorAll('.checkboxGenre')
@@ -211,7 +213,15 @@ let searchGames = () => {
 
 }
 
+let toggle = document.querySelector('.navbar-burger'),
+	sidebar = document.querySelector('.sidebar');
+
 //Arrow function
 window.onload = () => {
-  searchBtn.addEventListener('click', searchGames)
+	searchBtn.addEventListener('click', searchGames)
+	toggle.addEventListener('click', showSideBar)
 }
+
+let showSideBar = () => {
+	sidebar.classList.toggle('sidebar-active'), toggle.classList.toggle('is-active')
+};

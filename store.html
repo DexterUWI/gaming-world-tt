@@ -22,7 +22,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 </head>
 <body>
-  <nav class="navbar is-link menuBannerBG">
+  <nav class="navbar is-link menuBannerBG" role="navigation" aria-label="main navigation">
     <div class="container is-fluid">
       <div class="navbar-brand">
 		<a href="index.html"> 
@@ -59,6 +59,17 @@
       </div>
     </div>
   </nav>
+	<aside class="section sidebar">
+  <div class="container">
+    <ul class="has-text-centered">
+      <li> <a href="index.html" class="is-uppercase is-size-3"> Home </a> </li>
+		      <li> <a onClick="aboutProject()" class="is-uppercase is-size-3"> About </a> </li>
+      <li> <a href="store.html" class="is-uppercase is-size-3"> Shop </a> </li>
+					<li> <a id="sign-in-button-mobile" class="is-uppercase is-size-3"> Sign In </a> </li>
+			<li> <a id="button-sign-out-mobile" class="is-uppercase is-size-3"> Sign Out </a> </li>
+    </ul>
+  </div>
+</aside>
   <div class="container-fluid">
     <div class="columns is-mobile">
       <div class="column no-padding-bottom">
@@ -102,6 +113,7 @@
         </div>
       </div>
       <div class="column auto-full-height is-three-quarters no-padding-bottom padding-inset scroll-y">
+		  <!--Division is used here as a container with an identifier, gameContainer, subsequently to be used as the target for rendering data on the Document Object Model (DOM)-->
         <div class="columns is-multiline" id="gameContainer">
         </div>
       </div>

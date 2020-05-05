@@ -31,6 +31,7 @@ let showModal = (e) => {
       game.screens.forEach(screen => {
         gallery += `<a data-fancybox="gallery" href="${screen}"><img src="${screen}"/></a>`
       })
+	//using string interpolation to render data on the Document Object Model (DOM)
       let content = `   
                    <div class="modal-background" onclick="hideModal()"></div>
                     <div class="modal-card">
@@ -79,8 +80,10 @@ let showModal = (e) => {
 }
 
 
-// No semicolons used here =)
-
+/*
+JAVASCRIPT CODE FOR USER AUTHENTICATION VIA GOOGLE
+No semicolons used due to Automatic Semicolon Insertion (ASI) rules in javascript ;)
+*/
 let auth2, googleUser
 
 let appStart = function() {
@@ -123,6 +126,11 @@ var signinChanged = function(val) {
 				alertify.set('notifier', 'position', 'bottom-left');
 		alertify.notify('Signed out!', 'customDanger', 2);
     })
+	   document.getElementById('button-sign-out-mobile').addEventListener('click', function() {
+      auth2.signOut()
+				alertify.set('notifier', 'position', 'bottom-left');
+		alertify.notify('Signed out!', 'customDanger', 2);
+    })
 		alertify.set('notifier', 'position', 'bottom-left');
 		alertify.notify('Successfully Signed in!', 'customSuccess', 2);
   } else {
@@ -144,29 +152,37 @@ var userChanged = function(user) {
 
 
 var buttonControl = function (command) {
-	
 	if (auth2.isSignedIn.get()) {
 		console.log("Adding Event Listener")
 		document.getElementById('g-sign-in-wrapper').addEventListener('click', openUserInfo, true)
-
+		document.getElementById('sign-in-button-mobile').addEventListener('click', openUserInfo, true)
 	} else {
 		document.getElementById('g-sign-in-wrapper').removeEventListener('click', openUserInfo, true)
+		document.getElementById('sign-in-button-mobile').removeEventListener('click', openUserInfo, true)
+
 	}
 
 	if (command) {
 		document.getElementById('sign-in-button-text').innerText = 'Sign in with Google'
+		document.getElementById('sign-in-button-mobile').innerText = 'Sign in'
+
 		document.getElementById('g-sign-in-wrapper').addEventListener('click', signIn, true)
+		document.getElementById('sign-in-button-mobile').addEventListener('click', signIn, true)
 		document.getElementById('button-sign-out').style.display = 'none'
+		document.getElementById('button-sign-out-mobile').style.display = 'none'
 		document.getElementById('user-img').style.display = 'none'
 
 	} else {
 		var profile = googleUser.getBasicProfile()
 		document.getElementById('sign-in-button-text').innerText = `Hi, ${profile.getName()}`
-			//document.getElementById('sign-in-button-text').innerText = 'Signed in with Google'
-		console.log("Removing Event Listener")
-		document.getElementById('g-sign-in-wrapper').removeEventListener('click', signIn, true)
+		document.getElementById('sign-in-button-mobile').innerText = `Hi, ${profile.getName()}`
 
+		//document.getElementById('sign-in-button-text').innerText = 'Signed in with Google'
+		console.log("Removing Event Listener")
+		document.getElementById('sign-in-button-mobile').removeEventListener('click', signIn, true)
+		document.getElementById('g-sign-in-wrapper').removeEventListener('click', signIn, true)
 		document.getElementById('button-sign-out').style.display = ''
+		document.getElementById('button-sign-out-mobile').style.display = ''
 		document.getElementById('user-img').style.display = ''
 		document.getElementById('user-img').src = profile.getImageUrl()
 	}
@@ -197,6 +213,7 @@ function openUserInfo() {
 	// open an AlertifyJS custom alert, while passing HTML elements as strings to the title, and the body
 	alertify.alert(
 		"<b>USER DETAILS (logged in via Google)</b>",
+		//using string interpolation to render data on the Document Object Model (DOM)
 		`<p><strong>ACCOUNT NAME:</strong> ${profile.getName()}</p>
 		<img style="padding: 15px; border-radius: 95%;" src="${profile.getImageUrl()}"/>
 		<p><strong>EMAIL:</strong> <a href = "mailto:${profile.getEmail()}" target = "_blank">${profile.getEmail()}</a></p>`
@@ -204,5 +221,30 @@ function openUserInfo() {
 }
 // Begin app
 appStart()
+function openUserInfo() {
 
+	var profile = googleUser.getBasicProfile()
+	console.log(profile)
+
+	// open an AlertifyJS custom alert, while passing HTML elements as strings to the title, and the body
+	alertify.alert(
+		"<b>USER DETAILS (logged in via Google)</b>",
+						//using string interpolation to render data on the Document Object Model (DOM)
+		`<p><strong>ACCOUNT NAME:</strong> ${profile.getName()}</p>
+		<img style="padding: 15px; border-radius: 95%;" src="${profile.getImageUrl()}"/>
+		<p><strong>EMAIL:</strong> <a href = "mailto:${profile.getEmail()}" target = "_blank">${profile.getEmail()}</a></p>`
+	);
+}
+
+function aboutProject() {
+	// open an AlertifyJS custom alert, while passing HTML elements as strings to the title, and the body
+	alertify.alert(
+		"<b>ABOUT THIS PROJECT</b>",
+						//using string interpolation to render data on the Document Object Model (DOM)
+		`<a id="projectImg" href="../assets/images/flyer_connectech.jpg"><img src="../assets/images/flyer_connectech.jpg" alt=""/></a>`
+	);
+	
+}
+// Begin app
+appStart()
 
