@@ -17,7 +17,8 @@ $(document).ready( () => {
     })
   }, 20000)
 
-	
+
+//For every object in the JSON file we want to render the image, title, developer, release date, genre, price, as well "Read More" and "Add to Cart" buttons, in the .gameContainer of the store.html page. This is done using AJAX.
   $.ajax({
     url: `${BASE}/assets/json/games.json`,
     dataType: 'json',
