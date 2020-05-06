@@ -16,7 +16,7 @@ $(document).ready(() => {
                     <figure class="image service-img is-256x256"> 
                       <img src="${f.icon}" alt="${f.heading}"/>
                     </figure>
-                    <h4 class="has-text-weight-bold has-text-centered has-text-link" style="padding-top: 20px">${f.heading}</h4>
+                    <h1 class="has-text-weight-bold has-text-centered has-text-link is-size-4" style="padding-top: 20px">${f.heading}</h1>
                     <p class="has-text-weight-light has-text-centered">${f.desc}</p>
                   </div>
                </div>`, a.innerHTML = b
