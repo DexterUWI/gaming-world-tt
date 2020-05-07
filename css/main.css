@@ -1,22 +1,22 @@
-/* Import Roboto for Google Sign In buttons */
+/* Import Poppins font for website text font family from Google API */
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+/* Using wildcard (*) to set font family of all text type elements to Poppins */
+* {
+	font-family: 'Poppins', sans-serif;
+}
 
-
+/* Styling properties for arrow to top button class and mobile sidebar menu class */
 .arrowToTop, .sidebar {
 	display: flex;
 	position: fixed
 }
+
 .ajs-button, .badge:after, i {
 	text-align: center
 }
 
-/*Website font via Google*/
-
-* {
-	font-family: 'Poppins', sans-serif;
-}
 body {
-	font-size: 14px!important
+	font-size: 14px!important /* This is important, ignore all subsequent rules */
 }
 .cta-heading {
 	font-size: 70px!important
@@ -24,10 +24,14 @@ body {
 .overflow {
 	overflow-x: hidden
 }
+
+/* Homepage background image styling */
 .landing {
 	background: url("../assets/images/home_bg2.jpg") center no-repeat!important;
 	background-size: cover!important
 }
+
+/* Navigation bar background image styling for the "store.html" file */
 .menuBannerBG {
 	background: url("../assets/images/store_menu_bg.jpg") top no-repeat!important;
 	background-size: cover!important;
@@ -77,11 +81,10 @@ CSS for container to hold the background image container
 Conceals the overflow that occurs as the image zooms in
 */
 .zoomBOut {
-height: 400px;
+	height: 400px;
 	overflow: hidden;
-        position: relative;
-  }
-
+	position: relative;
+}
 
 .navbar-item {
 	font-size: 90%;
