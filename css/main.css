@@ -1,3 +1,7 @@
+/* Import Roboto for Google Sign In buttons */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
 .arrowToTop, .sidebar {
 	display: flex;
 	position: fixed
@@ -5,6 +9,9 @@
 .ajs-button, .badge:after, i {
 	text-align: center
 }
+
+/*Website font via Google*/
+
 * {
 	font-family: 'Poppins', sans-serif;
 }
