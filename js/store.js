@@ -222,12 +222,12 @@ No semicolons used due to Automatic Semicolon Insertion (ASI) rules in javascrip
 let auth2, googleUser
 
 let appStart = function() {
-  gapi.load('auth2', initSignInV2)
+  gapi.load('auth2', initSignInV2) //load auth2 module to enable Google Sign-In 
 }
 
 
 let initSignInV2 = function() {
-  auth2 = gapi.auth2.init({
+  auth2 = gapi.auth2.init({ //initialize 
     client_id: '814165126315-nadlnjfl6tgrvcbkplq53of558qo9ikq.apps.googleusercontent.com',
     scope: 'profile'
   })
@@ -300,7 +300,8 @@ var buttonControl = function (command) {
 	if (command) {
 		document.getElementById('sign-in-button-text').innerText = 'Sign in with Google'
 		document.getElementById('sign-in-button-mobile').innerText = 'Sign in'
-
+		
+		/* Create event listener and invoke sign-in when the button is clicked */
 		document.getElementById('g-sign-in-wrapper').addEventListener('click', signIn, true)
 		document.getElementById('sign-in-button-mobile').addEventListener('click', signIn, true)
 		document.getElementById('button-sign-out').style.display = 'none'
