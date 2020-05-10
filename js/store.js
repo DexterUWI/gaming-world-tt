@@ -281,8 +281,7 @@ var signinChanged = function(val) {
  */
 var userChanged = function(user) {
   console.log('User now: ', user)
-  googleUser = user
-
+  googleUser = user //Google user object that is returned after sign-in
 }
 
 
